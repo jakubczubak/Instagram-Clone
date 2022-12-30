@@ -1,10 +1,9 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export const Search = () => {
+export const Shop = () => {
   return (
     <View style={styles.container}>
-      <Text>Search screen</Text>
+      <Text>Shop screen</Text>
     </View>
   );
 };
