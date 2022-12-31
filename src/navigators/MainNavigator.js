@@ -11,6 +11,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Movies } from "../screens/Movies";
 import { Shop } from "../screens/Shop";
 import { Profile } from "../screens/Profile";
+import { PhotoDetails } from "../screens/PhotoDetails";
 
 const Tab = createBottomTabNavigator();
 
@@ -88,6 +89,15 @@ export function MainNavigator() {
             ) : (
               <FontAwesome name="user-circle-o" size={24} color="white" />
             ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Photo Details"
+        component={PhotoDetails}
+        options={{
+          tabBarVisible: false,
+          tabBarButton: (props) => null,
         }}
       />
     </Tab.Navigator>

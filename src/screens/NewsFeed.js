@@ -14,9 +14,10 @@ async function fetchData() {
 }
 
 export const NewsFeed = () => {
-  const { data, isLoading, isError } = useQuery(["users"], fetchData, {
+  const { data, isLoading, isError } = useQuery(["data"], fetchData, {
     placeholderData: [],
   });
+
 
   return (
     <View style={styles.container}>
@@ -75,8 +76,6 @@ export const NewsFeed = () => {
         </View>
       </View>
       <View style={{ flex: 5, backgroundColor: "black" }}>
-        {/* tu sie zacznie petla */}
-
         {isLoading && <Text>Loading...</Text>}
         <FlatList
           data={data}
@@ -171,8 +170,6 @@ export const NewsFeed = () => {
             );
           }}
         ></FlatList>
-
-        {/* tu sie skonczy petla */}
       </View>
       <StatusBar style="light" />
     </View>
