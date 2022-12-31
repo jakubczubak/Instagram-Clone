@@ -1,4 +1,4 @@
-# MEMS
+# Instagram Clone
 
 React Native Application - Instagram Clone
 
