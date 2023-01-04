@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
@@ -55,6 +55,6 @@ const styles = StyleSheet.create({
   news_feed_footer_icon_container: {
     flex: 1,
     backgroundColor: "black",
-    flexDirection: "row",
+    flexDirection: "column",
   },
 });
