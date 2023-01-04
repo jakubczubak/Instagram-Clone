@@ -39,8 +39,7 @@ export const NewsFeedFooter = () => {
         </Text>
 
         <Text style={{ color: "white", padding: 12 }}>
-          Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum
-          dolor sit amet.
+          Lorem ipsum dolor sit amet. Lorem ipsum.
         </Text>
       </View>
     </View>
