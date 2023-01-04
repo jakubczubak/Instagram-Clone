@@ -26,20 +26,12 @@ export const Search = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View
-        style={{
-          flex: 1,
-          backgroundColor: "black",
-          alignItems: "flex-end",
-          justifyContent: "center",
-          flexDirection: "row",
-          padding: 8,
-        }}
-      >
+        style={styles.search}>
         <EvilIcons
           name="search"
           size={24}
           color="white"
-          style={{ position: "absolute", left: 20, bottom: 15, zIndex: 2 }}
+          style={styles.search_icon}
         />
         <TextInput
           style={styles.input}
@@ -47,7 +39,7 @@ export const Search = ({ navigation }) => {
           placeholderTextColor="#fff"
         ></TextInput>
       </View>
-      <View style={{ flex: 6, backgroundColor: "black" }}>
+      <View style={styles.list_container}>
         <FlatList
           horizontal={false}
           numColumns={3}
@@ -98,4 +90,22 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     color: "#fff",
   },
+  search: {
+    flex: 1,
+    backgroundColor: "black",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    flexDirection: "row",
+    padding: 8,
+  },
+  search_icon: {
+    position: "absolute", 
+    left: 20,
+     bottom: 15, 
+     zIndex: 2
+  },
+  list_container:{
+    flex: 6,
+     backgroundColor: "black"
+  }
 });
