@@ -8,7 +8,7 @@ export const NewsFeedHeader = () => {
     <View style={styles.header_container}>
       <View style={styles.header_container_logo_container}>
         <LottieView
-          style={{ width: 80, height: 80 }}
+          style={styles.lottie_size}
           source={require("../../assets/instagram.json")}
           autoPlay
           loop
@@ -22,15 +22,15 @@ export const NewsFeedHeader = () => {
           name="plus-square"
           size={24}
           color="white"
-          style={{ padding: 16 }}
+          style={styles.icon_padding}
         />
         <AntDesign
           name="hearto"
           size={24}
           color="white"
-          style={{ padding: 16 }}
+          style={styles.icon_padding}
         />
-        <Feather name="send" size={24} color="white" style={{ padding: 16 }} />
+        <Feather name="send" size={24} color="white" style={styles.icon_padding} />
       </View>
     </View>
   );
@@ -61,4 +61,11 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
   },
+  lottie_size: {
+    width: 80, 
+    height: 80
+  },
+  icon_padding: {
+    padding: 16
+  }
 });

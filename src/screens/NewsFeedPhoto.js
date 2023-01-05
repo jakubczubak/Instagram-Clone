@@ -10,19 +10,19 @@ export const NewsFeedPhoto = ( {item} ) => {
           name="user-circle-o"
           size={30}
           color="white"
-          style={{ padding: 12 }}
+          style={styles.icon_padding}
         />
-        <Text style={{ color: "white" }}>Lorem Lorem Lorem</Text>
+        <Text style={styles.text_white}>Lorem Lorem Lorem</Text>
         <Entypo
           name="dots-three-horizontal"
           size={24}
           color="white"
-          style={{ position: "absolute", right: 10 }}
+          style={styles.icon_absolute}
         />
       </View>
       <View style={styles.news_feed_image}>
         <Image
-          style={{ width: "100%", height: 400 }}
+          style={styles.image}
           source={{
             uri: item.url,
           }}
@@ -46,5 +46,19 @@ const styles = StyleSheet.create({
       flex: 7,
       backgroundColor: "pink",
     },
+    image: {
+      width: "100%",
+       height: 400
+    },
+    icon_absolute: {
+      position: "absolute", 
+      right: 10
+    },
+    text_white:{
+      color: "white"
+    },
+    icon_padding: {
+      padding: 12
+    }
   });
   

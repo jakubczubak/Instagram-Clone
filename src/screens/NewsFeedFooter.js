@@ -7,38 +7,33 @@ export const NewsFeedFooter = () => {
   return (
     <View style={styles.news_feed_footer}>
       <View
-        style={{
-          flex: 1,
-          backgroundColor: "black",
-          flexDirection: "row",
-        }}
-      >
+        style={styles.icon_wrapper}>
         <AntDesign
           name="hearto"
           size={24}
           color="white"
-          style={{ padding: 16 }}
+          style={styles.icon_padding}
         />
-        <Feather name="send" size={24} color="white" style={{ padding: 16 }} />
+        <Feather name="send" size={24} color="white" style={styles.icon_padding} />
         <Feather
           name="message-circle"
           size={24}
           color="white"
-          style={{ padding: 16 }}
+          style={styles.icon_padding}
         />
         <FontAwesome
           name="bookmark-o"
           size={24}
           color="white"
-          style={{ padding: 16, position: "absolute", right: 10 }}
+          style={styles.icon_absolute}
         />
       </View>
       <View style={styles.news_feed_footer_icon_container}>
-        <Text style={{ color: "white", paddingLeft: 12 }}>
+        <Text style={styles.text_padding}>
           123 332 wyświetleń
         </Text>
 
-        <Text style={{ color: "white", padding: 12 }}>
+        <Text style={styles.text_padding}>
           Lorem ipsum dolor sit amet. Lorem ipsum.
         </Text>
       </View>
@@ -56,4 +51,21 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     flexDirection: "column",
   },
+  icon_wrapper: {
+    flex: 1,
+    backgroundColor: "black",
+    flexDirection: "row",
+  },
+  text_padding: {
+    color: "white",
+     padding: 12
+  },
+  icon_padding: {
+    padding: 16
+  },
+  icon_absolute: {
+    padding: 16, 
+    position: "absolute", 
+    right: 10
+  }
 });
