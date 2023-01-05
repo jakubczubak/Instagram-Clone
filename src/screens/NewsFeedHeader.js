@@ -30,7 +30,12 @@ export const NewsFeedHeader = () => {
           color="white"
           style={styles.icon_padding}
         />
-        <Feather name="send" size={24} color="white" style={styles.icon_padding} />
+        <Feather
+          name="send"
+          size={24}
+          color="white"
+          style={styles.icon_padding}
+        />
       </View>
     </View>
   );
@@ -62,10 +67,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   lottie_size: {
-    width: 80, 
-    height: 80
+    width: 80,
+    height: 80,
   },
   icon_padding: {
-    padding: 16
-  }
+    padding: 16,
+  },
 });

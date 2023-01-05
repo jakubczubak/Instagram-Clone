@@ -10,7 +10,7 @@ export const PhotoDetails = ({ route, navigation }) => {
   const item = {
     url: url,
     title: title,
-    id: id
+    id: id,
   };
 
   return (

@@ -6,15 +6,19 @@ import { FontAwesome } from "@expo/vector-icons";
 export const NewsFeedFooter = () => {
   return (
     <View style={styles.news_feed_footer}>
-      <View
-        style={styles.icon_wrapper}>
+      <View style={styles.icon_wrapper}>
         <AntDesign
           name="hearto"
           size={24}
           color="white"
           style={styles.icon_padding}
         />
-        <Feather name="send" size={24} color="white" style={styles.icon_padding} />
+        <Feather
+          name="send"
+          size={24}
+          color="white"
+          style={styles.icon_padding}
+        />
         <Feather
           name="message-circle"
           size={24}
@@ -29,9 +33,7 @@ export const NewsFeedFooter = () => {
         />
       </View>
       <View style={styles.news_feed_footer_icon_container}>
-        <Text style={styles.text_padding}>
-          123 332 wyświetleń
-        </Text>
+        <Text style={styles.text_padding}>123 332 wyświetleń</Text>
 
         <Text style={styles.text_padding}>
           Lorem ipsum dolor sit amet. Lorem ipsum.
@@ -58,14 +60,14 @@ const styles = StyleSheet.create({
   },
   text_padding: {
     color: "white",
-     padding: 12
+    padding: 12,
   },
   icon_padding: {
-    padding: 16
+    padding: 16,
   },
   icon_absolute: {
-    padding: 16, 
-    position: "absolute", 
-    right: 10
-  }
+    padding: 16,
+    position: "absolute",
+    right: 10,
+  },
 });

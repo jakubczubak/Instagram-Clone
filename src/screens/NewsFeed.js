@@ -1,4 +1,3 @@
-import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, FlatList, Image } from "react-native";
 import { useQuery } from "@tanstack/react-query";
@@ -49,5 +48,4 @@ const styles = StyleSheet.create({
     flex: 5,
     backgroundColor: "black",
   },
-
 });

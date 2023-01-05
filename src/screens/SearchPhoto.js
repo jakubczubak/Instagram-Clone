@@ -1,12 +1,9 @@
 import { View, TouchableOpacity, Image } from "react-native";
 import { Dimensions } from "react-native";
 
-
 const windowWidth = Dimensions.get("window").width;
 
-
 export const SearchPhoto = ({ item, navigation }) => {
-
   return (
     <View>
       <TouchableOpacity
@@ -33,5 +30,5 @@ const styles = StyleSheet.create({
   image: {
     height: 150,
     width: windowWidth / 3,
-  }
+  },
 });
